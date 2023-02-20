@@ -9,25 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d3a8707-f024-42ae-b377-3bc0fd59c077" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fordoctor/allDoctors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myproject/api/DoctorAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myproject/api/DoctorAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myproject/entity/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myproject/entity/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myproject/repository/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myproject/repository/DoctorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myproject/repository/HospitalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myproject/repository/HospitalRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myproject/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myproject/repository/PatientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myproject/repository/impl/DoctorRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myproject/repository/impl/DoctorRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myproject/repository/impl/HospitalRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myproject/repository/impl/HospitalRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myproject/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myproject/service/DoctorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myproject/service/HospitalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myproject/service/HospitalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myproject/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myproject/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myproject/service/impl/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myproject/service/impl/DoctorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fordoctor/mainDoctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fordoctor/mainDoctor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fordoctor/savedoctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fordoctor/savedoctor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/forhospital/hospitals.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/forhospital/hospitals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/forhospital/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/forhospital/main.html" afterDir="false" />
-    </list>
+    <list default="true" id="9d3a8707-f024-42ae-b377-3bc0fd59c077" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,7 +189,7 @@
       <workItem from="1676634692367" duration="22938000" />
       <workItem from="1676710993886" duration="36697000" />
       <workItem from="1676796710214" duration="15072000" />
-      <workItem from="1676816975266" duration="17640000" />
+      <workItem from="1676816975266" duration="17962000" />
     </task>
     <servers />
   </component>

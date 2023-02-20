@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stil.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <style>
+    body {
+      padding-bottom: 200px;
+      background-image: url("https://i.graphicmama.com/blog/wp-content/uploads/2021/04/22092955/free-medical-background-42.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      margin: auto;
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+
+    }
+
+    #menu {
+
+      margin: auto;
+      height: 100px;
+
+    }
+
+    ul {
+
+      word-spacing: 10px;
+
+    }
+
+    ul li {
+
+      display: inline;
+      text-decoration: none;
+      font-family: 'Roboto Slab', serif;
+      color: white;
+      letter-spacing: 5px;
+      background-color: #3c69cc;
+      padding: 8px;
+      border-radius: 2px;
+    }
+
+    ul li:hover {
+
+      background-color: #564256;
+      cursor: pointer;
+
+    }
+
+    #slogan {
+
+      margin: auto;
+      width: 1200px;
+      margin-top: 90px;
+      font-size: 60px;
+      color: antiquewhite;
+
+
+    }
+
+    h1 {
+
+      font-size: 50px;
+
+    }
+
+    h3 {
+
+      font-size: 30px;
+
+    }
+
+    button {
+
+      height: 50px;
+      width: 130px;
+      background-color: #3c69cc;
+      color: white;
+      font-size: 12px;
+      font-family: 'Roboto Slab', serif;
+      border-radius: 5px;
+    }
+
+    button:hover {
+
+      background-color: #564256;
+      cursor: pointer;
+
+    }
+
+  </style>
+</head>
+<body>
+
+<div id="menu">
+  <ul>
+    <li><a th:href="@{main/hospitals}">Hospitals</a></li>
+    <li><a th:href="@{/mainPatient}">Patients</a></li>
+    <li><a th:href="@{/mainDeportment}">Departments</a></li>
+    <li><a th:href="@{/mainAppointment}">Appointments</a></li>
+    <li><a th:href="@{/main/mainDoctor}">Doctor</a></li>
+  </ul>
+
+</div>
+
+<div id="slogan">
+  <h1>WE MAKE<br> <span>MINIMAL HOSPITAL WEB DESIGN</span></h1>
+  <h3>HTML + CSS + JAVA</h3>
+</div>
+
+<button type="button">LEARN MORE</button>
+<button type="button">SUBSCRIBE</button>
+
+</body>
+</html>

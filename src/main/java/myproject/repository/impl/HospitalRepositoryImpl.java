@@ -23,6 +23,7 @@ public class HospitalRepositoryImpl implements HospitalRepository {
     @Override
     public void save(Hospital hospital) {
         entityManager.persist(hospital);
+        entityManager.merge(hospital);
     }
 
     @Override

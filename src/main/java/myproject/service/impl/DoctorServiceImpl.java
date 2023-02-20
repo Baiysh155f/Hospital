@@ -1,30 +1,21 @@
 package myproject.service.impl;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import myproject.entity.Doctor;
 import myproject.repository.DoctorRepository;
+import myproject.repository.HospitalRepository;
 import myproject.service.DoctorService;
-import myproject.service.HospitalService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@Transactional
 @RequiredArgsConstructor
 public class DoctorServiceImpl implements DoctorService {
-    private final HospitalService hospitalService;
     private final DoctorRepository doctorRepository;
-
-    @Override
-    public List<Doctor> getAll(Long id) {
-        return doctorRepository.getAll(id);
-    }
-
-    @Override
-    public List<Doctor> all() {
-        return doctorRepository.all();
-    }
-
+    private final HospitalRepository hospitalRepository;
     @Override
     public Doctor save(Doctor newDoctor) {
         Doctor doctor = new Doctor();
@@ -34,8 +25,18 @@ public class DoctorServiceImpl implements DoctorService {
         doctor.setImages(newDoctor.getImages());
         doctor.setEmail(newDoctor.getEmail());
         doctor.setPosition(newDoctor.getPosition());
-        doctor.setHospital(hospitalService.getById(newDoctor.getHospitalId()));
-        return doctorRepository.getByHospitalId(doctor);
+        doctor.setHospital(hospitalRepository.getById(newDoctor.getHospitalId()));
+        return doctorRepository.save(doctor);
+    }
+
+    @Override
+    public List<Doctor> getAll(Long id) {
+        return doctorRepository.getAll(id);
+    }
+
+    @Override
+    public List<Doctor> all() {
+        return doctorRepository.all();
     }
 
     @Override

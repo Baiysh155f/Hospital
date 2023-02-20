@@ -268,8 +268,15 @@
     <li><a th:href="@{/mainAppointment}">Appointments</a></li>
     <li><a th:href="@{/mainDoctor}">Doctor</a></li>
   </ul>
+
+</div>
+<div id="contact">
+  <a th:href="@{/mainDoctors/savedoctor}">
+    <button  name="submit" type="submit" id="contact-submit" data-submit="...Sending">ADD NEW DOCTOR</button>
+  </a>
+</div>
 <div class="cards">
-  <div class="card" th:each="doctors:${doctor}">
+  <div class="card" th:each="doctors:${doctorse}">
     <div class="card__image-holder">
       <img class="card__image" th:src="${doctors.images}" alt="Doctor" />
     </div>

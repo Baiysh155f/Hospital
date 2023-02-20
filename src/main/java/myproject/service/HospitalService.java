@@ -1,8 +1,10 @@
 package myproject.service;
 
 import myproject.entity.Hospital;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
+@Service
 
 public interface HospitalService {
     List<Hospital> getAll();

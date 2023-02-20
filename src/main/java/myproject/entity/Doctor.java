@@ -34,12 +34,6 @@ public class Doctor {
     @OneToMany(mappedBy = "doctor", cascade = ALL, fetch = FetchType.EAGER)
     private List<Appointment> appointments;
 
-    public void addAppointment(Appointment appointment) {
-        if (appointments == null) {
-            appointments = new ArrayList<>();
-        }
-        appointments.add(appointment);
-    }
     @Transient
     private Long hospitalId;
 }

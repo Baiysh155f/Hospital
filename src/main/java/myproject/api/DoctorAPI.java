@@ -3,7 +3,6 @@ package myproject.api;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import myproject.entity.Doctor;
-import myproject.entity.Patient;
 import myproject.service.DoctorService;
 import myproject.service.HospitalService;
 import org.springframework.stereotype.Controller;
@@ -14,12 +13,18 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@RequestMapping("/{id}/mainDoctor")
+@RequestMapping("/mainDoctors")
 @RequiredArgsConstructor
 public class DoctorAPI {
     private final HospitalService hospitalService;
     private final DoctorService doctorService;
-    @GetMapping("/mainDoctor")
+    @GetMapping
+    String getAllDoctors(Model model){
+        List<Doctor> doctorList = doctorService.all();
+        model.addAttribute("doctorse",doctorList);
+        return "fordoctor/allDoctors";
+    }
+    @GetMapping("/{id}/mainDoctor")
     String findAll(@PathVariable("id") Long id, Model model) {
         List<Doctor> doctors = doctorService.getAll(id);
         model.addAttribute("doctor", doctors);
@@ -33,10 +38,12 @@ public class DoctorAPI {
         return "fordoctor/savedoctor";
     }
 
-    @PostMapping("/newdoctor")
-    String create(@ModelAttribute("doctor") Doctor doctor) {
+    @PostMapping
+    String create(@ModelAttribute("doctor") Doctor doctor,Model model) {
         doctorService.save(doctor);
-        return "redirect:/{id}/mainDoctor";
+        List<Doctor> doctorList = doctorService.all();
+        model.addAttribute("doctorse",doctorList);
+        return "fordoctor/allDoctors";
     }
 
     @DeleteMapping("/{doctorId}/delete")

@@ -101,7 +101,7 @@
 <body>
 <div class="login">
   <h1>Doctor</h1>
-  <form method="POST" action="#" th:action="@{/mainDoctor/newdoctor}" th:object="${doctor}">
+  <form method="POST" action="#" th:action="@{/mainDoctors}" th:object="${doctor}">
     <input type="text" th:field="*{images}" name="p" placeholder="Image" required="required" />
     <input type="text" th:field="*{lastName}" name="u" placeholder="Last name" required="required" />
     <input type="text" th:field="*{firstName}" name="p" placeholder="First name" required="required" />

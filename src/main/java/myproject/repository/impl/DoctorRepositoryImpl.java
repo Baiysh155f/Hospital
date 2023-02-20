@@ -15,6 +15,13 @@ import java.util.List;
 public class DoctorRepositoryImpl implements DoctorRepository {
     @PersistenceContext
     private final EntityManager entityManager;
+
+    @Override
+    public Doctor save(Doctor newDoctor) {
+        entityManager.persist(newDoctor);
+        return newDoctor;
+    }
+
     @Override
     public List<Doctor> getAll(Long id) {
         return entityManager.createQuery("from Doctor d join d.hospital h where h.id = :id", Doctor.class)
